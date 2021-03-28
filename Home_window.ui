@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Jaypee Public School</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: none;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="container">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>6</y>
+      <width>1270</width>
+      <height>790</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(121, 121, 145);
+border-radius: 10px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="background">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>15</y>
+       <width>1240</width>
+       <height>760</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+	background-color: rgb(45, 45, 45);
+
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>15</y>
+        <width>1220</width>
+        <height>730</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+background-color: rgb(61, 61, 61);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="toggle_bar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>171</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 40, 40);
+color: rgb(255, 155, 255);
+border-radius: 10px;
+border: none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="Home_button">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>5</y>
+          <width>161</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>19</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:rgb(55, 55, 55);
+	border: 3px solid rgb(61,61,61);
+	border-radius: 10px;
+	color: rgb(255, 170, 255);
+}
+
+QPushButton:hover{
+	border: 3px solid rgb(61, 61, 61)
+
+}
+
+QPushButton:pressed{
+	background-color:rgb(61, 61, 61);
+	color: rgb(255, 170, 255);
+	border: 4px solid rgb(45, 45, 45);
+	border-radius: 10px
+
+}</string>
+        </property>
+        <property name="text">
+         <string>Home</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>60</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Time_table">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>70</y>
+          <width>161</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:rgb(55, 55, 55);
+	border: 3px solid rgb(61,61,61);
+	border-radius: 10px;
+	color: rgb(255, 255, 255)
+}
+
+QPushButton:hover{
+	border: 3px solid rgb(61, 61, 61)
+
+}
+
+QPushButton:pressed{
+	background-color:rgb(61, 61, 61);
+	color: rgb(255, 255 255);
+	border: 4px solid rgb(45, 45, 45);
+	border-radius: 10px
+
+}</string>
+        </property>
+        <property name="text">
+         <string>Time Table</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>60</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>10</y>
+         <width>1031</width>
+         <height>711</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>2</number>
+       </property>
+       <widget class="QWidget" name="Home">
+        <widget class="QPushButton" name="close_button_home">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>0</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border-radius: 10px;
+	border: none;
+	background-color: rgb(249, 98, 93);
+}
+
+QPushButton:pressed{
+	border: none;
+	border-radius: 10px;
+	
+	background-color: rgb(249, 163, 161);
+
+
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Chemistry">
+        <widget class="QPushButton" name="close_button_home_3">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>0</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border-radius: 10px;
+	border: none;
+	background-color: rgb(249, 98, 93);
+}
+
+QPushButton:pressed{
+	border: none;
+	border-radius: 10px;
+	
+	background-color: rgb(249, 163, 161);
+
+
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="timetable">
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>90</y>
+           <width>1031</width>
+           <height>581</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QTableWidget
+{
+	background-color: rgb(61, 61, 61);
+	color: rgb(255, 255, 255);
+}
+
+
+QHeaderView::section
+{
+	background-color: rgb(61, 61, 61);
+	color: white;
+	border: none;
+	margin: 5px;
+	text-align: center;
+	font-family:Segoe UI ;
+	font-size:25px;
+	text-align:center;
+} 
+
+
+QTableWidget::item::selected 
+{
+	background-color: rgb(40, 40, 40);
+	color: white;
+	border: none;
+	margin: 5px;
+	text-align: right;
+	font-family:Segoe UI ;
+	font-size:25px;
+	text-align:center;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustIgnored</enum>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="dragDropOverwriteMode">
+          <bool>false</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::NoSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectItems</enum>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideLeft</enum>
+         </property>
+         <property name="showGrid">
+          <bool>true</bool>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::SolidLine</enum>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="columnCount">
+          <number>7</number>
+         </property>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderMinimumSectionSize">
+          <number>30</number>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>142</number>
+         </attribute>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderMinimumSectionSize">
+          <number>30</number>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>56</number>
+         </attribute>
+         <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Slots No</string>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Monday</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tuesday</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Wednesday</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Thusday</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Friday</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Saturday</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string>I</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string>II</string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string>III</string>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string>IV</string>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string>V</string>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="text">
+           <string>VI</string>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="text">
+           <string>VII</string>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="text">
+           <string>VIII</string>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="text">
+           <string>IX</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>0</y>
+           <width>421</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>48</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 40, 40);
+color: rgb(255, 155, 255);
+border-radius: 10px;
+border: none;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Time Table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="close_button_home_4">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>0</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border-radius: 10px;
+	border: none;
+	background-color: rgb(249, 98, 93);
+}
+
+QPushButton:pressed{
+	border: none;
+	border-radius: 10px;
+	
+	background-color: rgb(249, 163, 161);
+
+
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Physics">
+        <widget class="QPushButton" name="close_button_home_2">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>0</y>
+           <width>20</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	border-radius: 10px;
+	border: none;
+	background-color: rgb(249, 98, 93);
+}
+
+QPushButton:pressed{
+	border: none;
+	border-radius: 10px;
+	
+	background-color: rgb(249, 163, 161);
+
+
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
